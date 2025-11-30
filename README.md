@@ -136,6 +136,3 @@ Each analysis returns:
 - Apple Vision Framework documentation
 - Firebase team for backend infrastructure
 - The open-source community for inspiration and support
-
-
-**Note**: This is an MVP (Minimum Viable Product). The application continues to evolve with user feedback and new features based on community needs.
