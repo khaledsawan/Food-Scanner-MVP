@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8FB4B13A2EDBC7E8007903F8 /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB4B1392EDBC7E8007903F8 /* FirebaseAI */; };
+		8FB4B13C2EDBC7E8007903F8 /* FirebaseAILogic in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB4B13B2EDBC7E8007903F8 /* FirebaseAILogic */; };
+		8FB4B13E2EDBC7E8007903F8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB4B13D2EDBC7E8007903F8 /* FirebaseAnalytics */; };
+		8FB4B1402EDBC7E8007903F8 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB4B13F2EDBC7E8007903F8 /* FirebaseAnalyticsCore */; };
+		8FB4B1422EDBC7E8007903F8 /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB4B1412EDBC7E8007903F8 /* FirebaseAnalyticsIdentitySupport */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8F307B0C2ED2900A00A830F8 /* Food Scanner MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Scanner MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB4B13C2EDBC7E8007903F8 /* FirebaseAILogic in Frameworks */,
+				8FB4B1422EDBC7E8007903F8 /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				8FB4B13A2EDBC7E8007903F8 /* FirebaseAI in Frameworks */,
+				8FB4B13E2EDBC7E8007903F8 /* FirebaseAnalytics in Frameworks */,
+				8FB4B1402EDBC7E8007903F8 /* FirebaseAnalyticsCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,11 @@
 			);
 			name = "Food Scanner MVP";
 			packageProductDependencies = (
+				8FB4B1392EDBC7E8007903F8 /* FirebaseAI */,
+				8FB4B13B2EDBC7E8007903F8 /* FirebaseAILogic */,
+				8FB4B13D2EDBC7E8007903F8 /* FirebaseAnalytics */,
+				8FB4B13F2EDBC7E8007903F8 /* FirebaseAnalyticsCore */,
+				8FB4B1412EDBC7E8007903F8 /* FirebaseAnalyticsIdentitySupport */,
 			);
 			productName = "Food Scanner MVP";
 			productReference = 8F307B0C2ED2900A00A830F8 /* Food Scanner MVP.app */;
@@ -94,6 +112,9 @@
 			);
 			mainGroup = 8F307B032ED2900A00A830F8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F307BCC2ED66EBE00A830F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8F307B0D2ED2900A00A830F8 /* Products */;
 			projectDirPath = "";
@@ -254,6 +275,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Food Scanner MVP/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Food-Scanner-MVP-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App Transport Security Settings";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +305,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Food Scanner MVP/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Food-Scanner-MVP-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App Transport Security Settings";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +347,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F307BCC2ED66EBE00A830F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FB4B1392EDBC7E8007903F8 /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F307BCC2ED66EBE00A830F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+		8FB4B13B2EDBC7E8007903F8 /* FirebaseAILogic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F307BCC2ED66EBE00A830F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAILogic;
+		};
+		8FB4B13D2EDBC7E8007903F8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F307BCC2ED66EBE00A830F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8FB4B13F2EDBC7E8007903F8 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F307BCC2ED66EBE00A830F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		8FB4B1412EDBC7E8007903F8 /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F307BCC2ED66EBE00A830F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F307B042ED2900A00A830F8 /* Project object */;
 }
